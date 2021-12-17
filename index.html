@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "./icon.jpeg" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Wobot</title>
+</head>
+
+<body>
+
+    <script>
+        function changeColor(id) {
+            document.getElementById(id).style.color = "#fff"; // forecolor
+            document.getElementById(id).style.backgroundColor = "#3766e8"; // backcolor
+        }
+    </script>
+
+
+    <img alt="Wobot.ai" data-src="https://wobot.ai/wp-content/uploads/2021/03/logo.png"
+        class="img-fluid ls-is-cached lazyloaded" src="https://wobot.ai/wp-content/uploads/2021/03/logo.png">
+    <div class="box">
+        <div class="container">
+            <svg width="52" height="48" viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="11.0477" height="27.8427" rx="5.52383"
+                    transform="matrix(0.854439 -0.519552 0.510535 0.859857 0.499878 24.0586)" fill="#3766E8"></rect>
+                <rect width="11.0477" height="42.3694" rx="5.52383"
+                    transform="matrix(0.854439 -0.519552 0.510535 0.859857 12.3904 8.65234)" fill="#3766E8"></rect>
+                <rect width="11.0477" height="21.5479" rx="5.52383"
+                    transform="matrix(0.854439 -0.519552 0.510535 0.859857 31.0594 5.73828)" fill="#3766E8"></rect>
+            </svg>
+
+            <h2>It's a delight to have you onboard</h2>
+            <p>help us know you better.</p>
+            <p>(this how we optimize Wobot as per your buisness need)</p>
+            <form action="">
+                <label for="name">Company Name</label>
+                <input type="text" placeholder="e.g. Example Inc">
+
+                <label for="industry">Industry</label>
+                <select name="Industry" id="industry">
+                    <option value="select">select</option>
+                    <option value="tcs">TCS</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="google">Google</option>
+                </select>
+                <label for="size">Company Size</label>
+                <div class="csize">
+                    <h5 id="myid" onclick="changeColor('myid'); return false;">1-20</h5>
+                    <h5 id="myid2" onclick="changeColor('myid2'); return false;">21-50</h5>
+                    <h5 id="myid3" onclick="changeColor('myid3'); return false;">51-200</h5>
+                    <h5 id="myid4" onclick="changeColor('myid4'); return false;">201-500</h5>
+                    <h5 id="myid5" onclick="changeColor('myid5'); return false;">500+</h5>
+                </div>
+
+                <button class="btn">Get Started</button>
+
+            </form>
+
+        </div>
+        <p class="tc">Terms of use | Privacy policy</p>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
